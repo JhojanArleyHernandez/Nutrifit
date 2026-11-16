@@ -1089,6 +1089,76 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
 .mm-dot{width:9px; height:9px; border-radius:50%; flex-shrink:0;}
 .mm-dot.mm-p{background:#ff3d8b; box-shadow:0 0 8px #ff3d8b;} .mm-dot.mm-s{background:#2fd3ff; box-shadow:0 0 8px #2fd3ff;} .mm-dot.mm-t{background:#ffc447;}
 .xa-btn[hidden]{display:none;}
+
+/* ===== Informe de pesos ===== */
+#infRange{margin-bottom:14px;}
+.inf-note{font-size:12.5px; color:var(--text-dim); line-height:1.5; margin:-4px 2px 14px;}
+.inf-ins{display:flex; gap:10px; align-items:flex-start; padding:10px 0; border-bottom:1px solid var(--border); font-size:13.5px; line-height:1.5;}
+.inf-ins:first-child{padding-top:0;}
+.inf-ins:last-child{border-bottom:0; padding-bottom:0;}
+.inf-ins i{flex:0 0 8px; height:8px; border-radius:50%; margin-top:7px; background:var(--text-faint);}
+.inf-ins.good i{background:var(--cyan);}
+.inf-ins.warn i{background:var(--amber);}
+.inf-ins.info i{background:var(--lime);}
+.inf-grp{font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--text-faint); margin:18px 0 2px;}
+.inf-grp:first-child{margin-top:0;}
+.inf-row{display:flex; align-items:center; gap:10px; width:100%; padding:11px 0; background:none; border:0; border-bottom:1px solid var(--border); color:var(--text); text-align:left; font:inherit; cursor:pointer;}
+.inf-row:active{opacity:.7;}
+.inf-row .im{flex:1; min-width:0;}
+.inf-row .im b{display:block; font-size:14px; font-weight:600; line-height:1.25;}
+.inf-row .im small{display:block; font-size:12px; color:var(--text-dim); margin-top:3px; line-height:1.4;}
+.inf-row .is{display:flex; flex-direction:column; align-items:flex-end; gap:5px; flex-shrink:0;}
+.inf-badge{font-size:10px; font-weight:800; letter-spacing:.05em; padding:2px 7px; border-radius:999px; background:rgba(var(--brand-rgb),.16); color:var(--lime); white-space:nowrap;}
+.inf-badge.warn{background:rgba(242,180,90,.16); color:var(--amber);}
+.inf-mus{display:grid; grid-template-columns:112px 1fr 62px; align-items:center; gap:10px; margin:11px 0 0; font-size:12.5px;}
+.inf-mus .mn{font-weight:600; line-height:1.2;}
+.inf-mus .mb{position:relative; height:10px; border-radius:6px; background:var(--card-2); overflow:hidden;}
+.inf-mus .rg{position:absolute; top:0; bottom:0; background:rgba(79,217,208,.2); border-left:1px solid rgba(79,217,208,.6); border-right:1px solid rgba(79,217,208,.6);}
+.inf-mus .v{position:absolute; left:0; top:2px; bottom:2px; border-radius:4px; min-width:3px; background:var(--text-faint);}
+.inf-mus.low .v{background:var(--amber);}
+.inf-mus.ok .v{background:var(--cyan);}
+.inf-mus.high .v{background:var(--lime);}
+.inf-mus .mv{text-align:right; font-variant-numeric:tabular-nums; font-weight:700; line-height:1.15;}
+.inf-mus .mv small{display:block; font-size:10.5px; font-weight:600; color:var(--text-faint);}
+.inf-mus-sub{margin:2px 0 0 122px; font-size:11px; color:var(--text-faint);}
+.inf-sum{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px;}
+.inf-sum .c{flex:1 1 92px; background:var(--card-2); border-radius:14px; padding:10px 12px; min-width:0;}
+.inf-sum .c small{display:block; font-size:11px; color:var(--text-dim); font-weight:600;}
+.inf-sum .c b{display:block; font-size:15.5px; margin-top:3px;}
+.inf-tbl{width:100%; border-collapse:collapse; margin-top:14px; font-size:12.5px;}
+.inf-tbl th, .inf-tbl td{padding:8px 4px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top;}
+.inf-tbl th{font-size:10.5px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em;}
+.inf-tbl th:last-child, .inf-tbl td:last-child{text-align:right; white-space:nowrap;}
+.inf-tip{font-size:12.5px; line-height:1.5; color:var(--text-dim); margin-top:12px;}
+#sessionTypeChip.long{font-size:29px;}
+#todayGymType.long{font-size:21px; white-space:nowrap;}
+
+/* ===== Chequeo semanal, calentamiento, plan de comidas ===== */
+.chk-head{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+.chk-badge{font-size:11px; font-weight:800; letter-spacing:.04em; padding:3px 10px; border-radius:999px; white-space:nowrap; background:rgba(255,255,255,.08); color:var(--text-dim);}
+.chk-badge.good{background:rgba(var(--brand-rgb),.18); color:var(--lime);}
+.chk-badge.warn{background:rgba(242,180,90,.16); color:var(--amber);}
+.chk-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:12px 0;}
+.chk-c{background:var(--card-2); border-radius:14px; padding:10px 12px; min-width:0;}
+.chk-c small{display:block; font-size:11px; color:var(--text-dim); font-weight:600;}
+.chk-c b{display:block; font-size:16px; margin-top:3px; line-height:1.2; font-variant-numeric:tabular-nums;}
+.chk-c span{display:block; font-size:11.5px; color:var(--text-faint); margin-top:3px; line-height:1.35;}
+.chk-c.good b{color:var(--cyan);}
+.chk-c.warn b{color:var(--amber);}
+.chk-do{font-size:13.5px; line-height:1.5; margin:0;}
+.ex-warm{font-size:12.5px; color:var(--text-dim); line-height:1.5; margin:8px 0 0; padding:8px 10px; border-radius:12px; background:rgba(255,255,255,.04);}
+.ex-warm b{color:var(--text); font-weight:700;}
+.pl-sum{font-size:12.5px; color:var(--text-dim); margin:-4px 0 6px; line-height:1.5;}
+.pl-row{display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--border);}
+.pl-row:last-child{border-bottom:0;}
+.pl-row .pb{flex:1; min-width:0; cursor:pointer;}
+.pl-row .pb small{display:block; font-size:10.5px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--text-faint);}
+.pl-row .pb b{display:block; font-size:14px; font-weight:600; line-height:1.3; margin-top:2px;}
+.pl-row .pb em{display:block; font-style:normal; font-size:12px; color:var(--text-dim); margin-top:2px;}
+.pl-row .pb .det{display:none; font-size:12px; color:var(--text-dim); margin-top:6px; line-height:1.5;}
+.pl-row.open .pb .det{display:block;}
+.pl-add{flex:0 0 auto; min-width:46px; height:38px; border-radius:12px; border:1px solid var(--border); background:var(--card-2); color:var(--text); font:inherit; font-size:18px; font-weight:700; cursor:pointer;}
+.pl-add.on{background:rgba(var(--brand-rgb),.18); color:var(--lime); border-color:transparent;}
 </style>
 </head>
 <body data-theme="dark">
@@ -1254,6 +1324,7 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
       <div class="chip" data-type="snack">Snack</div>
     </div>
     <button class="btn btn-block btn-ghost" id="repeatMealsBtn" style="display:none; margin-bottom:14px;">↺ Repetir las comidas de ayer</button>
+    <div class="card" id="planCard" style="display:none;"></div>
     <div class="card">
       <div class="card-title">Registro de hoy</div>
       <div id="mealsList"></div>
@@ -1267,6 +1338,7 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
       <button class="tab-btn active" data-gymtab="hoy">Hoy</button>
       <button class="tab-btn" data-gymtab="semana">Semana</button>
       <button class="tab-btn" data-gymtab="historial">Historial</button>
+      <button class="tab-btn" data-gymtab="informe">Informe</button>
     </div>
 
     <div id="gymtab-hoy">
@@ -1276,6 +1348,14 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
         <div style="display:flex; gap:10px;">
           <button class="btn btn-sm" id="planUpdateLater" style="flex:1;">Ahora no</button>
           <button class="btn btn-sm btn-accent" id="planUpdateApply" style="flex:1;">Aplicar plan</button>
+        </div>
+      </div>
+      <div class="card" id="homeBanner" style="display:none; border-color:var(--cyan); background:rgba(79,217,208,.08);">
+        <div class="card-title" style="color:var(--cyan);">Nuevo: Hombro en casa (domingo)</div>
+        <p style="font-size:13.5px; line-height:1.5; margin-bottom:12px; color:var(--text);">Sesión corta de unos 25 minutos con tus mancuernas y la barra: refuerza el hombro posterior y lateral sin tocar tus días de gimnasio. Es opcional: si un domingo no la haces, no pasa nada.</p>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-sm" id="homeLater" type="button" style="flex:1;">Ahora no</button>
+          <button class="btn btn-sm btn-accent" id="homeApply" type="button" style="flex:1;">Agregar al domingo</button>
         </div>
       </div>
       <div class="card" id="deloadBanner" style="display:none; border-color:var(--coral); background:rgba(255,107,91,.08);">
@@ -1360,6 +1440,7 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
             <option value="empuje">Empuje básico (pecho / hombro / tríceps)</option>
             <option value="tiron">Tirón básico (espalda / bíceps)</option>
             <option value="hombro">Solo hombro</option>
+            <option value="hombroCasa">Hombro en casa (con mancuernas)</option>
             <option value="brazo">Solo brazo</option>
             <option value="core">Core</option>
             <option value="cardio">Cardio</option>
@@ -1376,6 +1457,41 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
       <div class="card">
         <div class="card-title">Rutinas completadas</div>
         <div id="historyList"></div>
+      </div>
+    </div>
+
+    <div id="gymtab-informe" style="display:none;">
+      <div class="card" id="infCheck" style="display:none;"></div>
+      <div class="tab-row seg" id="infRange">
+        <button class="tab-btn" type="button" data-w="4">4 sem</button>
+        <button class="tab-btn" type="button" data-w="8">8 sem</button>
+        <button class="tab-btn" type="button" data-w="12">12 sem</button>
+        <button class="tab-btn" type="button" data-w="0">Todo</button>
+      </div>
+      <div class="card" id="infEmpty" style="display:none;"><div class="empty"><p>Aún no hay series marcadas. Marca tus series en Gym → Hoy y aquí verás tus récords, la evolución de cada ejercicio y las series por músculo.</p></div></div>
+      <div class="kpi-grid" id="infKpis"></div>
+      <div id="infBody">
+        <p class="inf-note" id="infNote" style="display:none;"></p>
+        <div class="card">
+          <div class="card-title">Lectura rápida</div>
+          <div id="infInsights"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Pesos por ejercicio</div>
+          <p style="font-size:12px; color:var(--text-dim); margin:-6px 0 8px;">Toca un ejercicio para ver su evolución. El 1RM es una estimación: sirve para comparar, no para probarlo.</p>
+          <div id="infEx"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Series directas por músculo</div>
+          <p id="infMusSub" style="font-size:12px; color:var(--text-dim); margin:-6px 0 6px;"></p>
+          <div id="infMus"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Volumen por semana</div>
+          <div class="chart-wrap"><canvas id="chartInfVol"></canvas></div>
+        </div>
+        <button class="btn btn-block" id="infCopy" type="button">Copiar informe</button>
+        <p style="font-size:11.5px; color:var(--text-faint); margin:8px 2px 0; line-height:1.5;">Copia el informe en texto para pegarlo en un chat y que lo revisen contigo.</p>
       </div>
     </div>
   </section>
@@ -1536,6 +1652,23 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
     <div class="card">
       <div class="card-title">Recomendaciones de entrenamiento</div>
       <div id="trainingRecsBox"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Equipo en casa</div>
+      <p style="font-size:12.5px; color:var(--text-dim); line-height:1.5; margin-bottom:12px;">Para la rutina «Hombro en casa». La app solo te sugiere subir a los pesos que tengas aquí.</p>
+      <div class="field"><label>Mancuernas (kg de cada una, separadas por coma)</label><input type="text" id="homeDbInput" inputmode="decimal" autocomplete="off" placeholder="5, 10"></div>
+      <div class="field"><label>Barra fija de casa (kg)</label><input type="text" id="homeBarInput" inputmode="decimal" autocomplete="off" placeholder="15"></div>
+      <button class="btn btn-block" id="homeDbSave" type="button">Guardar equipo</button>
+    </div>
+
+    <div class="card" id="planImportCard">
+      <div class="card-title">Plan de comidas</div>
+      <p id="planStatus" style="font-size:12.5px; color:var(--text-dim); line-height:1.5; margin-bottom:12px;"></p>
+      <div class="field" id="planAnchorField" style="display:none;"><label>La semana 1 empieza el lunes</label><input type="date" id="planAnchor"></div>
+      <input type="file" id="planFile" accept=".json,application/json" style="display:none;">
+      <button class="btn btn-block" id="planImportBtn" type="button">Importar plan (.json)</button>
+      <button class="btn btn-block btn-ghost" id="planRemoveBtn" type="button" style="display:none; margin-top:8px;">Quitar el plan</button>
     </div>
 
     <div class="card" id="installCard">
@@ -1885,6 +2018,18 @@ path.mm-t{fill:#ffc447; stroke:#ffe29a;}
   </div>
 </div>
 
+<!-- MODAL: INFORME POR EJERCICIO -->
+<div class="modal-overlay" id="modalInfEx">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-head"><h3 id="infExName">Ejercicio</h3><button class="modal-close" data-close="modalInfEx">✕</button></div>
+    <div id="infExSummary"></div>
+    <div class="chart-wrap" style="height:190px;"><canvas id="chartInfEx"></canvas></div>
+    <p class="inf-tip" id="infExTip" style="display:none;"></p>
+    <div id="infExTable"></div>
+  </div>
+</div>
+
 <!-- MODAL: TÉCNICA DEL EJERCICIO -->
 <div class="modal-overlay" id="modalTechnique">
   <div class="modal">
@@ -2132,6 +2277,7 @@ const EXERCISE_DB = [
 ["Extensión de tríceps sobre la cabeza con cuerda","Tríceps"],["Press inclinado en Smith","Pecho"],
 ["Curl inclinado con mancuernas","Bíceps"],["Pullover en polea","Espalda"],
 ["Pec deck invertido (deltoide posterior)","Hombro"],["Caminata inclinada en cinta","Cardio"],
+["Remo inclinado con barra agarre ancho (casa)","Hombro"],["Pájaro con mancuernas sentado (casa)","Hombro"],["Elevación lateral inclinada con mancuerna (casa)","Hombro"],["Pájaro acostado de lado con mancuerna (casa)","Hombro"],
 ["HIIT en bicicleta (intervalos)","Cardio"],["Cruce de poleas de abajo hacia arriba","Pecho"]
 ].map(e=>({n:e[0],g:e[1]}));
 
@@ -2186,6 +2332,12 @@ const DEFAULT_ROUTINES = {
     ["Extensión de cuádriceps","Pierna",3,"12-15",0,"Última serie: drop set"],
     ["Curl femoral","Pierna",3,"12-15",0],
     ["Elevación de gemelos en máquina","Pierna",3,"15",0,"Última serie: suelta el peso y sigue sin peso al fallo"]],
+  /* Domingo en casa (el gimnasio no abre): 2 mancuernas de 5 kg y 2 de 10 kg, sin banco. ~10 series, sin press y sin llegar al fallo.
+     Con solo 5 y 10 kg la carga sube con tempo y repeticiones; los 10 kg entran cuando completes 20 reps limpias con 5. */
+  hombroCasa:[["Remo inclinado con barra agarre ancho (casa)","Hombro",3,"12-15",15,"Barra de cemento de 15 kg (peso fijo). Inclínate con la espalda recta y las rodillas flexionadas. Agarre más ancho que los hombros y lleva la barra a la parte alta del pecho con los codos abiertos, no pegados. Pausa 1 s arriba y baja en 3 s. Descanso 75 s"],
+    ["Pájaro con mancuernas sentado (casa)","Hombro",4,"15-20",5,"Hombro posterior. Siéntate en el borde de la cama (no en la silla del computador: tiene ruedas y se mueve), pecho sobre los muslos y mancuernas colgando. Abre los brazos en T llevando los codos hacia atrás, pausa 1 s arriba y baja en 3 s. Descanso 60 s"],
+    ["Elevación lateral inclinada con mancuerna (casa)","Hombro",3,"12-15",5,"Por brazo. Agárrate de un marco de puerta con la mano libre e inclínate hacia ese lado. Sube hasta la altura del hombro y baja en 3 s, sin llegar al fallo. Descanso 60 s"],
+    ["Pájaro acostado de lado con mancuerna (casa)","Hombro",2,"15-20",5,"Por brazo, acostado de lado en la cama. Brazo de arriba cruzado frente al pecho con el codo casi recto: ábrelo hacia el techo hasta la línea del hombro y baja lento. Descanso 45 s"]],
   /* Rutina original del usuario: Pecho + tríceps + hombro (lun/jue), Espalda + bíceps (mar/vie), Pierna (mié/sáb).
      Basado en la rutina real del usuario con ajustes: deltoide posterior en vez de elevación frontal,
      un drop set por músculo, más remo horizontal, femoral directo y orden más seguro en pierna. */
@@ -2241,7 +2393,7 @@ const DEFAULT_ROUTINES = {
 function buildDefaultRoutinePlan(){
   const plan = {};
   /* Split del usuario (pecho / espalda / pierna) dos veces por semana: A = fuerza, B = volumen */
-  const map = {lunes:"pechoA",martes:"espaldaA",miercoles:"piernaA",jueves:"pechoB",viernes:"espaldaB",sabado:"piernaB",domingo:"descanso"};
+  const map = {lunes:"pechoA",martes:"espaldaA",miercoles:"piernaA",jueves:"pechoB",viernes:"espaldaB",sabado:"piernaB",domingo:"hombroCasa"};
   Object.entries(map).forEach(([day,tipo])=>{
     const list = DEFAULT_ROUTINES[tipo] || [];
     plan[day] = { tipo, ejercicios: list.map(e=>({name:e[0],group:e[1],series:e[2],reps:e[3],peso:e[4],notas:e[5]||""})) };
@@ -2636,6 +2788,30 @@ const EXERCISE_CUES = {
 "Codos un poco flexionados y hombros atrás",
 "Cierra del todo y aprieta 2 s: así trabaja el centro del pecho",
 "Abre lento hasta sentir el estiramiento, sin pasar más atrás de los hombros"
+],
+"Remo inclinado con barra agarre ancho (casa)": [
+"Inclínate hacia delante con la espalda recta, las rodillas flexionadas y el abdomen firme",
+"Agarre más ancho que los hombros: así el trabajo pasa de los dorsales al hombro posterior y la espalda alta",
+"Lleva la barra a la parte alta del pecho con los codos abiertos a los lados",
+"Pausa de 1 s arriba y baja en 3 s. Si tienes que balancear el torso, la barra pesa demasiado para este objetivo"
+],
+"Pájaro con mancuernas sentado (casa)": [
+"Siéntate en el borde de la cama, o de una silla firme: no uses la silla del computador, que rueda",
+"Pecho sobre los muslos, mancuernas colgando bajo los hombros, codos un poco flexionados",
+"Abre los brazos en T llevando los codos hacia atrás, no las manos: así trabaja el hombro y no el trapecio",
+"Pausa de 1 s arriba y baja en 3 s. Si necesitas impulso, el peso es demasiado"
+],
+"Elevación lateral inclinada con mancuerna (casa)": [
+"Agárrate de un marco de puerta con la mano libre y inclínate hacia ese lado",
+"Sube la mancuerna hasta la altura del hombro con el codo apenas flexionado, sin encoger el trapecio",
+"Baja en 3 s: con poco peso, el control es lo que da el estímulo",
+"Haz todas las repeticiones de un brazo y luego cambia"
+],
+"Pájaro acostado de lado con mancuerna (casa)": [
+"Acuéstate de lado en la cama con la cabeza apoyada; el brazo de arriba cruzado frente al pecho",
+"Con el codo casi recto, ábrelo hacia el techo hasta la línea del hombro",
+"No gires el torso: solo se mueve el brazo",
+"Baja en 3 s y termina las repeticiones de un lado antes de cambiar"
 ]
 };
 /* ============ ANIMACIONES DE TÉCNICA (figura humana ilustrada) ============
@@ -3227,7 +3403,7 @@ const XA_ALIAS = {
   'Extensión de tríceps en polea':'Jalón de tríceps con barra', 'Extensión de tríceps sobre la cabeza':'Extensión de tríceps sobre la cabeza con cuerda',
   'Extensión de tríceps unilateral en polea':'Jalón de tríceps con cuerda', 'Elevación de talones (gemelos)':'Elevación de gemelos en máquina',
   'Prensa de piernas':'Prensa de piernas', 'Jalón al pecho':'Jalón abierto al pecho', 'Remo Gironda (cable bajo)':'Remo sentado en polea baja',
-  'Pájaros (deltoide posterior)':'Pec deck invertido (deltoide posterior)', 'Aperturas en polea baja':'Cruce de poleas de abajo hacia arriba',
+  'Pájaros (deltoide posterior)':'Pec deck invertido (deltoide posterior)', 'Remo inclinado con barra agarre ancho (casa)':'Remo con barra', 'Pájaro con mancuernas sentado (casa)':'Pec deck invertido (deltoide posterior)', 'Pájaro acostado de lado con mancuerna (casa)':'Pec deck invertido (deltoide posterior)', 'Elevación lateral inclinada con mancuerna (casa)':'Elevación lateral unilateral', 'Aperturas en polea baja':'Cruce de poleas de abajo hacia arriba',
   'Cruce de poleas':'Peck deck (contractora)', 'Aperturas con mancuerna':'Press con mancuernas plano', 'Press de banca declinado':'Press de banca'
 };
 const XA_PATTERN = {push_horizontal:'Press de banca', push_vertical:'Press militar con mancuernas', pull_vertical:'Jalón abierto al pecho',
@@ -3273,6 +3449,7 @@ const MUSCLES = {
   'Pájaros (deltoide posterior)':'deltP|espaldaMedia trapecio|', 'Press Arnold':'deltF deltL|triceps|', 'Encogimientos (trapecio)':'trapecio||antebrazo',
   'Press militar con mancuernas':'deltF deltL|triceps|trapecio', 'Face pull':'deltP|espaldaMedia trapecio|', 'Elevación lateral en polea':'deltL||',
   'Elevación lateral unilateral':'deltL||trapecio', 'Elevación lateral por detrás del cuerpo (polea)':'deltL|deltP|', 'Pec deck invertido (deltoide posterior)':'deltP|espaldaMedia|',
+  'Remo inclinado con barra agarre ancho (casa)':'deltP espaldaMedia|dorsal trapecio biceps|', 'Pájaro con mancuernas sentado (casa)':'deltP|espaldaMedia trapecio|', 'Elevación lateral inclinada con mancuerna (casa)':'deltL||trapecio', 'Pájaro acostado de lado con mancuerna (casa)':'deltP|espaldaMedia|',
   'Curl de bíceps con barra':'biceps|antebrazo|', 'Curl martillo':'biceps antebrazo||', 'Curl concentrado':'biceps||', 'Curl en banco Scott':'biceps|antebrazo|',
   'Curl en polea baja':'biceps|antebrazo|', 'Curl con barra Z':'biceps|antebrazo|', 'Curl alterno con mancuernas':'biceps|antebrazo|', 'Curl inclinado con mancuernas':'biceps||',
   'Extensión de tríceps en polea':'triceps||', 'Press francés':'triceps||', 'Fondos de tríceps en banco':'triceps|pecho deltF|', 'Extensión de tríceps sobre la cabeza':'triceps||',
@@ -3874,7 +4051,7 @@ function openTechniqueModal(name, group){
   const figWrap = document.getElementById('techFigWrap');
   const cuesList = document.getElementById('techCues');
   const video = document.getElementById('techVideoLink');
-  if(video) video.href = 'https://www.youtube.com/results?search_query=' + encodeURIComponent('técnica ' + name);
+  if(video) video.href = 'https://www.youtube.com/results?search_query=' + encodeURIComponent('técnica ' + name.replace(/\s*\(casa\)\s*$/i,''));
   const exactSvg = EXERCISE_ILLUSTRATIONS[name];
   const patternKey = classifyExercise(name, group);
   const pat = patternKey ? EXERCISE_PATTERNS[patternKey] : null;
@@ -3890,8 +4067,11 @@ function openTechniqueModal(name, group){
 
 const DAYS = ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
 const DAY_LABELS = {lunes:"Lunes",martes:"Martes",miercoles:"Miércoles",jueves:"Jueves",viernes:"Viernes",sabado:"Sábado",domingo:"Domingo"};
-const TIPO_LABELS = {pechoA:"Pecho A",pechoB:"Pecho B",espaldaA:"Espalda A",espaldaB:"Espalda B",piernaA:"Pierna A",piernaB:"Pierna B",descanso:"Descanso",empuje:"Empuje",tiron:"Tirón",pierna:"Pierna",pecho:"Pecho",espalda:"Espalda",hombro:"Hombro",brazo:"Brazo",core:"Core",cardio:"Cardio",personalizado:"Personalizado"};
+const TIPO_LABELS = {pechoA:"Pecho A",pechoB:"Pecho B",espaldaA:"Espalda A",espaldaB:"Espalda B",piernaA:"Pierna A",piernaB:"Pierna B",descanso:"Descanso",empuje:"Empuje",tiron:"Tirón",pierna:"Pierna",pecho:"Pecho",espalda:"Espalda",hombro:"Hombro",hombroCasa:"Hombro casa",brazo:"Brazo",core:"Core",cardio:"Cardio",personalizado:"Personalizado"};
 function tipoLabel(t){ return TIPO_LABELS[t] || capitalize(t); }
+/* Días que se pueden saltar sin que cuente como falta (el domingo en casa) */
+const OPTIONAL_TIPOS = ['hombroCasa'];
+function tipoShow(t){ return tipoLabel(t) + (OPTIONAL_TIPOS.includes(t) ? ' · opcional' : ''); }
 
 /* ============ ESTADO ============ */
 const STORE_KEY = "nutrifit_data_v2";
@@ -4189,6 +4369,8 @@ function renderPerfil(){
   document.getElementById('profName').textContent = p.name || "Usuario";
   renderBackupStatus();
   renderInstallCard();
+  renderHomeEquip();
+  renderPlanSettings();
   document.getElementById('profGoal').textContent = "Objetivo: "+GOAL_LABELS[p.goal].toLowerCase();
   renderPlanSummary();
   document.getElementById('goalKcal').textContent = state.goals.kcal;
@@ -4333,13 +4515,14 @@ function renderDashboard(){
   const dayKey = todayDayKey();
   const plan = state.routinePlan[dayKey];
   const doneToday = state.sessions[t] && state.sessions[t].completed;
-  document.getElementById('todayGymType').textContent = plan.tipo==='descanso' ? 'Día de descanso' : tipoLabel(plan.tipo);
+  { const _t = plan.tipo==='descanso' ? 'Día de descanso' : tipoLabel(plan.tipo), _e = document.getElementById('todayGymType'); _e.textContent = _t; _e.classList.toggle('long', _t.length > 10); }
   const tSes = state.sessions[t];
   document.getElementById('todayGymCount').textContent = plan.tipo==='descanso' ? 'recupera para mañana'
     : (tSes && tSes.exercises.length ? '~'+estimateMinutes(tSes, plan)+' min' : plan.ejercicios.length + ' ejercicios');
   const tag = document.getElementById('todayGymTag');
   if(plan.tipo==='descanso'){ tag.textContent='Descanso'; tag.className='tag rest'; }
   else if(doneToday){ tag.textContent='Completada'; tag.className='tag done'; }
+  else if(OPTIONAL_TIPOS.includes(plan.tipo)){ tag.textContent='Opcional'; tag.className='tag rest'; }
   else{ tag.textContent='Pendiente'; tag.className='tag pending'; }
 
   renderAdherence();
@@ -4421,7 +4604,7 @@ function habitStatus(iso){
     water: (state.water[iso]||0) >= waterGoal,
     steps: (h.pasos||0) >= 8000,
     sleep: (h.sueno||0) >= 7,
-    train: (plan && plan.tipo==='descanso') || !!(ses && ses.completed)
+    train: (plan && (plan.tipo==='descanso' || OPTIONAL_TIPOS.includes(plan.tipo))) || !!(ses && ses.completed)
   };
   return {flags, score:Object.values(flags).filter(Boolean).length, pSum, h, plan};
 }
@@ -4434,7 +4617,7 @@ function renderHabits(){
   const steps = document.getElementById('stepsInput'), sleep = document.getElementById('sleepInput');
   if(document.activeElement!==steps) steps.value = st.h.pasos || '';
   if(document.activeElement!==sleep) sleep.value = st.h.sueno || '';
-  document.getElementById('hTrainVal').textContent = st.plan && st.plan.tipo==='descanso' ? 'Día de descanso' : (f.train ? 'Rutina completada' : 'Pendiente');
+  document.getElementById('hTrainVal').textContent = st.plan && st.plan.tipo==='descanso' ? 'Día de descanso' : (st.plan && OPTIONAL_TIPOS.includes(st.plan.tipo) && !(state.sessions[todayISO()] && state.sessions[todayISO()].completed) ? 'Opcional hoy' : (f.train ? 'Rutina completada' : 'Pendiente'));
   document.getElementById('habitScore').textContent = st.score+' de 6';
 }
 document.getElementById('hCrea').addEventListener('click',()=>{
@@ -4579,11 +4762,12 @@ document.getElementById('repeatMealsBtn').addEventListener('click',()=>{
   if(!y.length) return;
   if(!confirm(`¿Copiar las ${y.length} comidas de ayer a hoy? Después puedes eliminar o ajustar las que no repitas.`)) return;
   const t = todayISO(), base = Date.now();
-  y.forEach((m,i)=>state.meals.push(Object.assign(JSON.parse(JSON.stringify(m)), {id:'m'+(base+i), date:t, photo:null})));
+  y.forEach((m,i)=>state.meals.push(Object.assign(JSON.parse(JSON.stringify(m)), {id:'m'+(base+i), date:t, photo:null, plan:undefined})));
   save(); renderComidas(); renderDashboard(); renderProgreso();
   toast('Comidas de ayer copiadas');
 });
 function renderComidas(){
+  renderMealPlan();
   const t = todayISO();
   const rb = document.getElementById('repeatMealsBtn');
   const yCount = state.meals.filter(m=>m.date===yesterdayISO()).length;
@@ -5212,11 +5396,12 @@ document.querySelectorAll('.tab-btn[data-gymtab]').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.tab-btn[data-gymtab]').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
-    ['hoy','semana','historial'].forEach(k=>{
+    ['hoy','semana','historial','informe'].forEach(k=>{
       document.getElementById('gymtab-'+k).style.display = (k===btn.dataset.gymtab)?'block':'none';
     });
     if(btn.dataset.gymtab==='semana') renderWeekEditor();
     if(btn.dataset.gymtab==='historial') renderHistorial();
+    if(btn.dataset.gymtab==='informe') renderInforme();
   });
 });
 
@@ -5258,6 +5443,13 @@ document.getElementById('resetPlanBtn').addEventListener('click',()=>{
    Las preferencias de cada ejercicio (equipo, por lado, descanso, unidad, barra, discos) viven en state.exPrefs. */
 const LB = 0.45359237;
 const DB_WEIGHTS = [2.5,5,7.5,10,12.5,15,17.5,20];          /* mancuernas del gimnasio */
+/* Ejercicios de casa: llevan "(casa)" en el nombre y usan las mancuernas que tú tengas en Perfil */
+function isHomeEx(name){ return /\(casa\)\s*$/i.test(name||''); }
+function homeDbList(){
+  const l = (state.prefs && Array.isArray(state.prefs.homeDb)) ? state.prefs.homeDb.filter(v=>v>0) : [];
+  return l.length ? l.slice().sort((a,b)=>a-b) : [5,10];
+}
+function dbListFor(name){ return isHomeEx(name) ? homeDbList() : DB_WEIGHTS; }
 const KG_PLATES = [25,20,15,10,5,2.5,1.25], LB_PLATES = [45,35,25,10,5,2.5];
 const EQUIP_LABEL = {db:'Mancuernas', stack:'Polea', plates:'Discos', body:'Corporal', none:'Cardio'};
 const EQUIP_ICO = {
@@ -5312,7 +5504,8 @@ function exMeta(name, planEx){
   const uni = group==='Cardio' ? false : (p.uni != null ? p.uni : autoUni);
   const hm = normalizeText(notes).match(/(\d+)\s*s\s*fuerte\s*y\s*(\d+)\s*s\s*suave(?:,?\s*(\d+)(?:\s*-\s*(\d+))?\s*veces)?/);
   const hiit = hm ? {work:+hm[1], easy:+hm[2], rounds: hm[4] ? +hm[4] : (hm[3] ? +hm[3] : 0)} : null;
-  return {name, group, notes, reps, timed, equip, uni, hiit,
+  const fixed = (!timed && isFixedBar(name)) ? homeBarKg() : 0;
+  return {name, group, notes, reps, timed, equip: fixed ? 'stack' : equip, fixed, uni, hiit,
     unit: equip==='plates' ? (p.unit||'kg') : 'kg',
     rest: p.rest != null ? p.rest : defaultRest(group, reps, notes, timed),
     target: repTarget(reps)};
@@ -5369,9 +5562,10 @@ function renderSessionHoy(){
   const plan = state.routinePlan[dayKey];
   const t = todayISO();
   document.getElementById('sessionDayLabel').textContent = DAY_LABELS[dayKey]+' · hoy';
-  document.getElementById('sessionTypeChip').textContent = plan.tipo==='descanso' ? 'Descanso' : tipoLabel(plan.tipo);
+  { const _l = plan.tipo==='descanso' ? 'Descanso' : tipoLabel(plan.tipo), _c = document.getElementById('sessionTypeChip'); _c.textContent = _l; _c.classList.toggle('long', _l.length > 9); }
   renderDeloadBanner();
   renderPlanUpdateBanner();
+  renderHomeBanner();
 
   if(!state.sessions[t] && plan.ejercicios.length){
     state.sessions[t] = { day:dayKey, completed:false, exercises: plan.ejercicios.map(ex=>{
@@ -5410,6 +5604,7 @@ function exerciseCardHTML(ex, exi, planEx, t){
   const allDone = ex.series.length>0 && ex.series.every(s=>s.done);
   const sug = progressionSuggestion(ex.name, t, m);
   const lastTxt = lastTimeText(ex.name, t, m);
+  const warm = warmupHTML(ex, exi, m, t);
   const A = `data-exi="${exi}"`;
   const tags = [`<span class="ex-tag plain">${escapeHtml(setsRepsText(planEx.series||ex.series.length, m.reps || ex.series.length))}</span>`];
   if(m.rest) tags.push(`<button type="button" class="ex-tag" data-act="rest" ${A} aria-label="Cambiar el descanso de este ejercicio">${svgI(CLOCK_ICO)}${fmtSecs(m.rest)}</button>`);
@@ -5453,6 +5648,7 @@ function exerciseCardHTML(ex, exi, planEx, t){
     ${planEx.notas ? `<p class="ex-note">${escapeHtml(planEx.notas)}</p>` : ''}
     ${lastTxt ? `<div class="last-time">${lastTxt}</div>` : ''}
     ${sug ? `<div class="ex-sug">${sug}</div>` : ''}
+    ${warm}
     <div class="set-grid">${head}${rows}</div>
     ${foot}
   </article>`;
@@ -5473,7 +5669,7 @@ function updateSessionProgress(){
   document.getElementById('sessPct').textContent = pct+'%';
   document.getElementById('sessCount').textContent = `${done}/${total}`;
   document.getElementById('sessVol').textContent = sessionVolume(ses).toLocaleString('es-CO');
-  const tipo = plan.tipo, ab = /A$/.test(tipo) ? 'Fuerza' : /B$/.test(tipo) ? 'Volumen' : '';
+  const tipo = plan.tipo, ab = /A$/.test(tipo) ? 'Fuerza' : /B$/.test(tipo) ? 'Volumen' : tipo==='hombroCasa' ? 'Opcional · posterior y lateral' : '';
   document.getElementById('sessFocus').textContent = !ses || !total
     ? (tipo==='descanso' ? 'Recupera para mañana' : 'Sin ejercicios')
     : [ab, ses.exercises.length+' ejercicios', '~'+estimateMinutes(ses, plan)+' min'].filter(Boolean).join(' · ');
@@ -5638,7 +5834,8 @@ function findLastSessionForExercise(name, excludeDate){
 }
 /* Siguiente peso que existe en el gimnasio para ese equipo */
 function nextWeight(m, w){
-  if(m.equip==='db'){ const nx = DB_WEIGHTS.find(x=>x > w+0.01); return nx==null ? null : nx; }
+  if(m.fixed) return null;
+  if(m.equip==='db'){ const nx = dbListFor(m.name).find(x=>x > w+0.01); return nx==null ? null : nx; }
   if(m.equip==='stack') return Math.floor(w/5 + 1e-9)*5 + 5;
   if(m.equip==='plates') return m.unit==='lb' ? (Math.round(w/LB) + 5)*LB : Math.round((w + (w>=60 ? 5 : 2.5))*4)/4;
   if(m.equip==='body') return w + 2.5;
@@ -5669,9 +5866,12 @@ function progressionSuggestion(name, excludeDate, m){
   }
   if(m.equip==='body') return `💡 Llegaste al tope del rango. Agrega peso (un disco de 2,5 o 5 kg) o baja en 3 segundos cada repetición.`;
   const nx = nextWeight(m, topW);
-  if(nx==null) return `💡 Ya usas la mancuerna más pesada (20 kg). Para seguir avanzando, haz más reps o baja en 3 segundos.`;
+  if(m.fixed) return `💡 La barra de casa es fija (${fmt1(m.fixed)} kg): para progresar haz una repetición más, baja en 3 segundos o pausa 1 segundo arriba.`;
+  if(nx==null) return `💡 Ya usas la mancuerna más pesada que tienes (${fmt1(Math.max(...dbListFor(m.name)))} kg). Para seguir avanzando, haz más reps o baja en 3 segundos.`;
   const why = easy ? `te sobraron reps (RIR ${fmt1(avgRir)})` : `completaste todo con ${wTxt(topW, m)}${avgRir!==null?' (RIR '+fmt1(avgRir)+')':''}`;
-  return `💡 La última vez ${why}. Hoy prueba ${wTxt(nx, m)}${m.equip==='db'?' por mancuerna':''}${m.target && m.target.lo!==m.target.hi ? ' y vuelve a '+m.target.lo+' reps' : ''}.`;
+  const bigJump = nx/topW >= 1.6, hasRange = m.target && m.target.lo!==m.target.hi;
+  if(bigJump) return `💡 La última vez ${why}. El siguiente peso que tienes (${wTxt(nx, m)}${m.equip==='db'?' por mancuerna':''}) es un salto grande: prueba y espera bajar a unas ${Math.max(6, Math.round((m.target ? m.target.lo : 12)*0.6))} reps. Si todavía no, quédate con ${wTxt(topW, m)} y hazlo más difícil: baja en 3 s y pausa 1 s arriba.`;
+  return `💡 La última vez ${why}. Hoy prueba ${wTxt(nx, m)}${m.equip==='db'?' por mancuerna':''}${hasRange ? ' y vuelve a '+m.target.lo+' reps' : ''}.`;
 }
 
 /* ============ RECORDATORIO DE SEMANA DE DESCARGA ============ */
@@ -5699,7 +5899,9 @@ function renderDeloadBanner(){
     document.getElementById('deloadText').textContent = `Llevas ${streak} semanas seguidas entrenando 5+ días. Esta semana entrena suave para recuperarte: mismos días y ejercicios, pero la mitad de las series, el mismo peso o un poco menos, y terminando cada serie con 4-5 repeticiones en reserva. Sin intervalos. La semana siguiente vuelves a tu rutina normal, más descansado y más fuerte.`;
     banner.style.display='block';
   } else {
-    banner.style.display='none';
+    const ps = perfDeloadSignal();
+    if(ps){ document.getElementById('deloadText').textContent = perfDeloadText(ps); banner.style.display='block'; }
+    else banner.style.display='none';
   }
 }
 
@@ -6191,6 +6393,10 @@ function platesTotal(w){ const per = w.plates.kg.reduce((a,b)=>a+b,0) + w.plates
 function openWeightPicker(exi, si, side){
   const c = sessCtx(exi); if(!c) return;
   const {ex, m} = c, s = ex.series[si], p = exPrefGet(ex.name);
+  if(m.fixed){ /* barra fija: no hay nada que elegir */
+    s.pesoReal = m.fixed; ex.series.forEach((x,i)=>{ if(i>si && !x.done) x.pesoReal = m.fixed; });
+    save(); renderSessionHoy(); toast('Barra fija: '+fmt1(m.fixed)+' kg'); return;
+  }
   const cur = side==='L' ? s.wL : side==='R' ? s.wR : s.pesoReal;
   wp = {exi, si, side, name:ex.name, uni:m.uni, equip: m.equip==='none' ? 'stack' : m.equip, value: cur||0, unit: m.unit,
         bar: p.bar!=null ? p.bar : defaultBar(ex.name), plates: p.plates ? JSON.parse(JSON.stringify(p.plates)) : {kg:[], lb:[]},
@@ -6211,8 +6417,9 @@ function renderWP(){
   const near = v => Math.abs(v - wp.value) < 0.01;
   let h = '';
   if(wp.equip==='db' || wp.equip==='body'){
-    const list = wp.equip==='body' ? [0].concat(DB_WEIGHTS) : DB_WEIGHTS;
-    h += `<p class="wp-hint">${wp.equip==='db' ? 'Peso de cada mancuerna. Tu gimnasio tiene de 2,5 a 20 kg.' : 'Peso extra con disco o mancuerna. «Sin peso» es solo tu cuerpo.'}</p>`;
+    const dbl = isHomeEx(wp.name) ? homeDbList() : DB_WEIGHTS;
+    const list = wp.equip==='body' ? [0].concat(dbl) : dbl;
+    h += `<p class="wp-hint">${wp.equip==='db' ? (isHomeEx(wp.name) ? 'Peso de cada mancuerna. En casa tienes: '+dbl.map(fmt1).join(', ')+' kg.' : 'Peso de cada mancuerna. Tu gimnasio tiene de 2,5 a 20 kg.') : 'Peso extra con disco o mancuerna. «Sin peso» es solo tu cuerpo.'}</p>`;
     h += `<div class="wp-grid">${list.map(v=>`<button type="button" class="wp-chip${near(v)?' on':''}" data-wv="${v}">${v===0 ? '<b class="t">Sin peso</b>' : `<b>${fmt1(v)}</b><small>kg</small>`}</button>`).join('')}</div>`;
     h += wpOtherRow(false);
   } else if(wp.equip==='stack'){
@@ -6325,7 +6532,7 @@ function renderWeekEditor(){
     const plan = state.routinePlan[d];
     return `<div class="day-cell ${d===todayKey?'today':''} ${plan.tipo==='descanso'?'rest':''}" onclick="selectEditDay('${d}')">
       <div class="d">${DAY_LABELS[d].slice(0,3)}</div>
-      <div class="t">${plan.tipo==="descanso"?"Desc.":(/^(pecho|espalda|pierna)[AB]$/.test(plan.tipo) ? `${tipoLabel(plan.tipo).slice(0,-2)}<span class="ab">${plan.tipo.slice(-1)}</span>` : tipoLabel(plan.tipo))}</div>
+      <div class="t">${plan.tipo==="descanso"?"Desc.":(/^(pecho|espalda|pierna)[AB]$/.test(plan.tipo) ? `${tipoLabel(plan.tipo).slice(0,-2)}<span class="ab">${plan.tipo.slice(-1)}</span>` : (plan.tipo==='hombroCasa' ? 'Hombro<span class="ab">casa</span>' : tipoLabel(plan.tipo)))}</div>
     </div>`;
   }).join('');
   const sel = document.getElementById('daySelector');
@@ -6467,7 +6674,7 @@ function periodStats(startOff, n){
   const logged = new Set(meals.map(m=>m.date)).size;
   const sum = k => meals.reduce((a,m)=>a+(m[k]||0),0);
   const trainDays = days.filter(iso=>state.sessions[iso] && state.sessions[iso].completed);
-  const planned = days.filter(iso=>{ const pl = state.routinePlan[dayKeyOf(iso)]; return pl && pl.tipo!=='descanso'; }).length;
+  const planned = days.filter(iso=>{ const pl = state.routinePlan[dayKeyOf(iso)]; return pl && pl.tipo!=='descanso' && (!OPTIONAL_TIPOS.includes(pl.tipo) || (state.sessions[iso] && state.sessions[iso].completed)); }).length;
   const byType = {desayuno:0, almuerzo:0, cena:0, snack:0};
   meals.forEach(m=>{ byType[m.type in byType ? m.type : 'snack'] += m.kcal||0; });
   return {n, logged, kcal: logged ? sum('kcal')/logged : 0, p: logged ? sum('p')/logged : 0,
@@ -6636,6 +6843,597 @@ document.getElementById('saveWeightBtn').addEventListener('click',()=>{
   toast("Peso registrado");
 });
 
+
+/* ============ INFORME DE PESOS (Gym → Informe) ============
+   Lee las series que marcaste (peso, reps, RIR) y arma: récords, evolución por ejercicio,
+   series directas por músculo y volumen por semana. Todo se calcula en el celular. */
+const INF_GROUPS = ['Pecho','Espalda','Hombro','Bíceps','Tríceps','Pierna','Core'];
+/* rango orientativo de series directas por semana (los músculos sin rango solo se muestran) */
+const MUSC_TARGETS = {pecho:[10,24], dorsal:[10,24], espaldaMedia:[6,18], deltL:[8,18], deltP:[8,16], biceps:[8,18], triceps:[8,18],
+  cuadriceps:[10,24], isquios:[8,18], gluteo:[6,20], gemelo:[6,16], abdomen:[6,16]};
+const MUSC_ORDER = ['pecho','deltF','deltL','deltP','triceps','dorsal','espaldaMedia','trapecio','biceps','antebrazo','cuadriceps','isquios','gluteo','gemelo','abdomen','oblicuos','aductor','lumbar'];
+let infWeeks = 4, infRows = [];
+
+function infDays(a, b){ return Math.round((new Date(b+'T12:00:00') - new Date(a+'T12:00:00'))/86400000); }
+function infAgo(n){ const d = new Date(); d.setDate(d.getDate()-n); return localISO(d); }
+function infMonday(iso){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate() - ((d.getDay()+6)%7)); return localISO(d); }
+function infPeriod(weeks){
+  const end = todayISO();
+  if(!weeks) return {weeks:0, start:'0000-01-01', end, prevStart:null, prevEnd:null};
+  return {weeks, start:infAgo(weeks*7-1), end, prevEnd:infAgo(weeks*7), prevStart:infAgo(weeks*14-1)};
+}
+/* Índice de fuerza de una serie: 1RM estimado (Epley). Con el cuerpo, cuentan las reps; con lastre, el lastre manda. */
+function infScore(w, r, equip){
+  if(equip==='body') return w>0 ? 1000 + w*(1+r/30) : r;
+  return w>0 ? w*(1+r/30) : 0;
+}
+function infW(w, m){
+  if(m.equip==='body') return w>0 ? '+'+fmt1(w)+' kg' : 'PC';
+  return m.unit==='lb' ? fmt1(w/LB)+' lb' : fmt1(w)+' kg';
+}
+function infSet(t, m){ return (m.equip==='body' && !(t.w>0)) ? `PC × ${t.r}` : `${infW(t.w, m)} × ${t.r}`; }
+function infTrend(r){ const m = r.m; return r.delta==null ? '' : `${infSet(r.first.top, m)} → ${infSet(r.last.top, m)} (${r.delta>=0?'+':'−'}${Math.round(Math.abs(r.delta))}%)`; }
+function infE1(top, m){ return (!top || m.equip==='body' || !(top.w>0) || top.r>12) ? null : top.w*(1+top.r/30); }
+
+/* Todas las series hechas, por ejercicio y por día */
+function infCollect(){
+  const byEx = {}; let first = null;
+  Object.keys(state.sessions||{}).sort().forEach(iso=>{
+    const ses = state.sessions[iso]; if(!ses || !Array.isArray(ses.exercises)) return;
+    const plan = state.routinePlan[ses.day];
+    ses.exercises.forEach((ex,i)=>{
+      const m = exMeta(ex.name, sessionPlanEx(plan, ex, i));
+      if(m.group==='Cardio' || m.timed) return;
+      const done = (ex.series||[]).filter(s=>s.done);
+      if(!done.length) return;
+      const sets = [];
+      done.forEach(s=>{
+        if(s.wL!=null && (+s.rL>0 || +s.rR>0)){
+          if(+s.rL>0) sets.push({w:+s.wL||0, r:+s.rL});
+          if(+s.rR>0) sets.push({w:+s.wR||0, r:+s.rR});
+        } else if(+s.reps>0) sets.push({w:+s.pesoReal||0, r:+s.reps});
+      });
+      let top = null;
+      sets.forEach(s=>{ const sc = infScore(s.w, s.r, m.equip); if(sc>0 && (!top || sc>top.score)) top = {w:s.w, r:s.r, score:sc}; });
+      const rec = byEx[ex.name] || (byEx[ex.name] = {name:ex.name, group:m.group||'Otro', m, sessions:[]});
+      rec.m = m; if(m.group) rec.group = m.group;
+      rec.sessions.push({iso, n:done.length, sets, top, vol:done.reduce((a,s)=>a+setVolume(s, m.equip),0),
+        rirN:done.filter(s=>s.rir!=='' && s.rir!=null).length});
+      if(!first || iso<first) first = iso;
+    });
+  });
+  return {byEx, first};
+}
+/* Totales de un periodo: días, series, volumen y series por músculo */
+function infAgg(byEx, start, end){
+  const a = {days:new Set(), sets:0, vol:0, rirN:0, direct:{}, indirect:{}};
+  Object.values(byEx).forEach(rec=>{
+    const mus = musclesFor(rec.name, rec.group);
+    rec.sessions.forEach(s=>{
+      if(s.iso<start || s.iso>end) return;
+      a.days.add(s.iso); a.sets += s.n; a.vol += s.vol; a.rirN += s.rirN;
+      mus.p.forEach(k=>{ a.direct[k] = (a.direct[k]||0) + s.n; });
+      mus.s.forEach(k=>{ a.indirect[k] = (a.indirect[k]||0) + s.n*0.5; });
+    });
+  });
+  return a;
+}
+function infBuildRows(byEx, P){
+  const prStart = P.weeks ? P.start : infAgo(27), today = todayISO(), rows = [];
+  Object.values(byEx).forEach(rec=>{
+    const inP = rec.sessions.filter(s=>s.top && s.iso>=P.start && s.iso<=P.end);
+    if(!inP.length) return;
+    const all = rec.sessions.filter(s=>s.top);
+    const before = all.filter(s=>s.iso<prStart).reduce((b,s)=>Math.max(b,s.top.score),0);
+    const recent = all.filter(s=>s.iso>=prStart).reduce((b,s)=>Math.max(b,s.top.score),0);
+    const best = inP.reduce((b,s)=>(!b || s.top.score>b.top.score) ? s : b, null);
+    const first = inP[0], last = inP[inP.length-1];
+    const delta = inP.length>1 && first.top.score>0 ? (last.top.score-first.top.score)/first.top.score*100 : null;
+    let stalled = false;
+    if(all.length>=4 && infDays(all[all.length-1].iso, today)<=14){
+      const eb = all.slice(0,-3).reduce((b,s)=>Math.max(b,s.top.score),0);
+      stalled = all.slice(-3).every(s=>s.top.score <= eb*1.005);
+    }
+    rows.push({rec, name:rec.name, group:rec.group, m:rec.m, n:inP.length, best, first, last, delta, lastIso:last.iso,
+      isPR: before>0 && recent > before*1.001, stalled});
+  });
+  return rows;
+}
+function infEffWeeks(first, P){
+  if(!first) return 1;
+  const span = Math.max(1, Math.ceil((infDays(first, todayISO())+1)/7));
+  return P.weeks ? Math.min(P.weeks, span) : span;
+}
+function infWeekly(byEx, P){
+  const map = {};
+  Object.values(byEx).forEach(rec=>rec.sessions.forEach(s=>{
+    if(s.iso<P.start || s.iso>P.end) return;
+    const k = infMonday(s.iso); map[k] = (map[k]||0) + s.vol;
+  }));
+  const keys = Object.keys(map).sort(); if(!keys.length) return {labels:[], data:[]};
+  const out = [], endD = new Date(infMonday(P.end)+'T12:00:00'); let d = new Date(keys[0]+'T12:00:00');
+  while(d<=endD){ const k = localISO(d); out.push([k, map[k]||0]); d.setDate(d.getDate()+7); }
+  return {labels:out.map(x=>fmtDate(x[0])), data:out.map(x=>x[1])};
+}
+function infMuscleState(k, avg){
+  const t = MUSC_TARGETS[k];
+  if(!t) return 'na';
+  return avg < t[0] ? 'low' : avg > t[1] ? 'high' : 'ok';
+}
+/* "Lectura rápida": lo más útil del periodo en pocas frases */
+function infInsights(rows, cur, effW){
+  const out = [], names = (list, n=3) => list.slice(0,n).map(r=>r.name.replace(/\s*\(casa\)\s*$/i,'')).join(', ') + (list.length>n ? ` y ${list.length-n} más` : '');
+  if(cur.days.size < 4) out.push({t:'info', x:`Llevas ${cur.days.size} ${cur.days.size===1?'sesión':'sesiones'} con series marcadas en este periodo. Con 3 o 4 semanas de datos el informe se vuelve mucho más claro.`});
+  const rep = rows.filter(r=>r.n>=2 && r.delta!=null);
+  if(rep.length){
+    const up = rep.filter(r=>r.delta>=2), down = rep.filter(r=>r.delta<=-5);
+    out.push({t: up.length*2>=rep.length ? 'good' : 'info', x:`Subiste fuerza en ${up.length} de ${rep.length} ejercicios que repetiste${up.length ? ': '+names(up) : ''}.`});
+    if(down.length) out.push({t:'warn', x:`Bajaron: ${names(down)}. Puede ser fatiga, poco sueño o un cambio de ejecución: míralos la próxima semana antes de tocar el peso.`});
+  }
+  const prs = rows.filter(r=>r.isPR);
+  if(prs.length) out.push({t:'good', x:`Récords nuevos: ${names(prs, 4)}.`});
+  const st = rows.filter(r=>r.stalled);
+  if(st.length) out.push({t:'warn', x:`Estancados (3 sesiones sin mejorar): ${names(st)}. Prueba una repetición más con el mismo peso, bajar en 3 segundos o descansar 15 s más antes de subir carga.`});
+  if(cur.days.size >= 3){
+    const low = Object.keys(MUSC_TARGETS).map(k=>({k, avg:(cur.direct[k]||0)/effW, t:MUSC_TARGETS[k]}))
+      .filter(o=>o.avg < o.t[0] && (cur.direct[o.k] || cur.indirect[o.k]))
+      .sort((a,b)=>(a.avg/a.t[0])-(b.avg/b.t[0])).slice(0,3);
+    if(low.length) out.push({t:'warn', x:'Por debajo del rango de series: '+low.map(o=>`${MUSC_NAMES[o.k]} (${fmt1(o.avg)} por semana, rango ${o.t[0]}-${o.t[1]})`).join('; ')+'.'});
+    const high = Object.keys(MUSC_TARGETS).map(k=>({k, avg:(cur.direct[k]||0)/effW, t:MUSC_TARGETS[k]})).filter(o=>o.avg > o.t[1]).slice(0,2);
+    if(high.length) out.push({t:'info', x:'Por encima del rango: '+high.map(o=>`${MUSC_NAMES[o.k]} (${fmt1(o.avg)})`).join(', ')+'. Está bien mientras tu fuerza siga subiendo y duermas bien; si se estanca, aquí sobra volumen.'});
+  }
+  if(cur.sets >= 20 && cur.rirN/cur.sets < 0.5) out.push({t:'info', x:`Solo anotaste el RIR en ${Math.round(cur.rirN/cur.sets*100)}% de las series. Con RIR la app te dice mejor cuándo subir de peso.`});
+  return out.slice(0,6);
+}
+function infModel(){
+  const {byEx, first} = infCollect(), P = infPeriod(infWeeks);
+  const cur = infAgg(byEx, P.start, P.end), prev = P.prevStart ? infAgg(byEx, P.prevStart, P.prevEnd) : null;
+  const rows = infBuildRows(byEx, P), effW = infEffWeeks(first, P);
+  const wl = (state.weightLog||[]).filter(w=>w.date>=P.start && w.date<=P.end).sort((a,b)=>a.date.localeCompare(b.date));
+  let body = '';
+  if(wl.length>=2){ const d = wl[wl.length-1].kg - wl[0].kg; body = `Peso corporal: ${fmt1(wl[0].kg)} → ${fmt1(wl[wl.length-1].kg)} kg (${d>=0?'+':'−'}${fmt1(Math.abs(d))})`; }
+  return {byEx, first, P, cur, prev, rows, effW, body, insights:infInsights(rows, cur, effW), weekly:infWeekly(byEx, P)};
+}
+
+function infRowHTML(r){
+  const m = r.m, b = r.best.top, e1 = infE1(b, m);
+  const pill = r.delta==null ? `<span class="dpill">nuevo</span>`
+    : Math.abs(r.delta) < 2 ? '<span class="dpill">igual</span>'
+    : `<span class="dpill ${r.delta>0?'good':'bad'}">${r.delta>0?'▲':'▼'} ${Math.round(Math.abs(r.delta))}%</span>`;
+  const badges = (r.isPR ? '<span class="inf-badge">RÉCORD</span>' : '') + (r.stalled ? '<span class="inf-badge warn">ESTANCADO</span>' : '');
+  return `<button type="button" class="inf-row" data-inf="${r.i}"><div class="im"><b>${escapeHtml(r.name.replace(/\s*\(casa\)\s*$/i,''))}</b>`
+    + `<small>Mejor ${escapeHtml(infSet(b, m))}${m.equip==='db'?' c/u':''}${e1 ? ' · 1RM est. '+escapeHtml(infW(e1, m)) : ''} · ${r.n} ${r.n===1?'sesión':'sesiones'}</small></div>`
+    + `<div class="is">${pill}${badges}</div></button>`;
+}
+function infMusclesHTML(cur, effW){
+  const keys = MUSC_ORDER.filter(k=>cur.direct[k] || (MUSC_TARGETS[k] && cur.indirect[k]));
+  if(!keys.length) return '<div class="empty" style="padding:14px 6px;"><p>Sin series en este periodo.</p></div>';
+  const avgOf = k => (cur.direct[k]||0)/effW;
+  const maxV = Math.max(24, ...keys.map(k=>Math.ceil(avgOf(k)+1)), ...keys.map(k=>MUSC_TARGETS[k] ? MUSC_TARGETS[k][1]+2 : 0));
+  const lbl = {low:'bajo', ok:'en rango', high:'alto', na:''};
+  return keys.map(k=>{
+    const avg = avgOf(k), st = infMuscleState(k, avg), t = MUSC_TARGETS[k];
+    const rg = t ? `<i class="rg" style="left:${t[0]/maxV*100}%; width:${(t[1]-t[0])/maxV*100}%"></i>` : '';
+    const ind = cur.indirect[k] ? ` +${fmt1(cur.indirect[k]/effW)} indirectas` : '';
+    return `<div class="inf-mus ${st}"><span class="mn">${MUSC_NAMES[k]}</span><span class="mb">${rg}<i class="v" style="width:${Math.min(100, avg/maxV*100)}%"></i></span>`
+      + `<span class="mv">${fmt1(avg)}<small>${lbl[st] || ''}</small></span></div>`
+      + (ind ? `<div class="inf-mus-sub">${ind.trim()} por semana</div>` : '');
+  }).join('');
+}
+function renderInforme(){
+  const kpis = document.getElementById('infKpis'); if(!kpis) return;
+  renderInfCheck();
+  const M = infModel(), {P, cur, prev} = M;
+  document.querySelectorAll('#infRange .tab-btn').forEach(b=>b.classList.toggle('active', +b.dataset.w===infWeeks));
+  const none = !Object.keys(M.byEx).length;
+  document.getElementById('infEmpty').style.display = none ? 'block' : 'none';
+  document.getElementById('infBody').style.display = none ? 'none' : 'block';
+  kpis.style.display = none ? 'none' : 'grid';
+  if(none){ infRows = []; return; }
+  const card = (label, ico, tone, val, unit, pill, hint) => `<div class="kpi"><span class="kpi-top"><span class="kpi-l">${label}</span><span class="kpi-ico ${tone}">${svgI(ICO[ico])}</span></span><b class="kpi-v">${val}<small>${unit}</small></b><span class="kpi-d">${pill}<span>${hint}</span></span></div>`;
+  const prCount = M.rows.filter(r=>r.isPR).length;
+  kpis.innerHTML = [
+    card('Sesiones','gym','coral', cur.days.size,'', prev ? deltaPill(cur.days.size, prev.days.size, 1) : '', 'con series marcadas'),
+    card('Series','repeat','cyan', cur.sets.toLocaleString('es-CO'),'', prev ? deltaPill(cur.sets, prev.sets, 1) : '', 'hechas'),
+    card('Volumen','bolt','amber', fmtBig(cur.vol),'kg', prev ? deltaPill(cur.vol, prev.vol, 1) : '', 'peso × reps'),
+    card('Récords','chart','lime', prCount,'', '', P.weeks ? 'ejercicios en récord' : 'en los últimos 28 días')
+  ].join('');
+  document.getElementById('infNote').textContent = M.body;
+  document.getElementById('infNote').style.display = M.body ? 'block' : 'none';
+  document.getElementById('infInsights').innerHTML = M.insights.length
+    ? M.insights.map(o=>`<div class="inf-ins ${o.t}"><i></i><span>${escapeHtml(o.x)}</span></div>`).join('')
+    : '<div class="inf-ins"><i></i><span>Sin novedades: sigue registrando tus series.</span></div>';
+  infRows = M.rows; infRows.forEach((r,i)=>{ r.i = i; });
+  const groups = {}; infRows.forEach(r=>{ (groups[r.group] || (groups[r.group]=[])).push(r); });
+  const order = INF_GROUPS.concat(Object.keys(groups).filter(g=>!INF_GROUPS.includes(g)));
+  document.getElementById('infEx').innerHTML = infRows.length
+    ? order.filter(g=>groups[g]).map(g=>`<div class="inf-grp">${escapeHtml(g)}</div>` + groups[g].slice().sort((a,b)=>b.lastIso.localeCompare(a.lastIso)).map(infRowHTML).join('')).join('')
+    : '<div class="empty" style="padding:14px 6px;"><p>No hay series con peso y repeticiones en este periodo.</p></div>';
+  document.getElementById('infMusSub').textContent = `Promedio por semana (${M.effW} ${M.effW===1?'semana':'semanas'}). La franja es el rango orientativo.`;
+  document.getElementById('infMus').innerHTML = infMusclesHTML(cur, M.effW);
+  drawChart('chartInfVol','bar',{
+    labels: M.weekly.labels.length ? M.weekly.labels : ['Sin datos'],
+    datasets:[{label:'Volumen (kg × reps)', data: M.weekly.labels.length ? M.weekly.data : [0], backgroundColor:getCss('--lime'), borderRadius:8}]
+  },{ scales:{ x:{ticks:{color:getCss('--text-dim')}, grid:{display:false}}, y:{ticks:{color:getCss('--text-dim')}, grid:{color:getCss('--border')}} }, plugins:{legend:{display:false}} });
+}
+document.getElementById('infRange').addEventListener('click',e=>{
+  const b = e.target.closest('[data-w]'); if(!b) return;
+  infWeeks = +b.dataset.w; tapFx(); renderInforme();
+});
+document.getElementById('infEx').addEventListener('click',e=>{
+  const b = e.target.closest('[data-inf]'); if(b) openInfEx(+b.dataset.inf);
+});
+
+/* Detalle de un ejercicio: récord, gráfica y sus últimas sesiones */
+function openInfEx(i){
+  const r = infRows[i]; if(!r) return;
+  const m = r.m, ss = r.rec.sessions.filter(s=>s.top).slice(-14), b = r.best.top, e1 = infE1(b, m);
+  document.getElementById('infExName').textContent = r.name.replace(/\s*\(casa\)\s*$/i,'');
+  const chip = (l, v) => `<div class="c"><small>${l}</small><b>${escapeHtml(v)}</b></div>`;
+  document.getElementById('infExSummary').innerHTML = `<div class="inf-sum">${chip('Mejor serie', infSet(b, m)+(m.equip==='db'?' c/u':''))}${e1 ? chip('1RM estimado', infW(e1, m)+(m.equip==='db'?' c/u':'')) : ''}${chip('Sesiones', String(r.rec.sessions.length))}</div>`;
+  const tip = r.stalled ? 'Llevas 3 sesiones sin mejorar. Prueba una repetición más con el mismo peso, bajar en 3 segundos o descansar 15 s más antes de subir carga.'
+    : (progressionSuggestion(r.name, '', m) || '').replace(/^💡\s*/, '');
+  document.getElementById('infExTip').textContent = tip;
+  document.getElementById('infExTip').style.display = tip ? 'block' : 'none';
+  document.getElementById('infExTable').innerHTML = `<table class="inf-tbl"><thead><tr><th>Fecha</th><th>Series</th><th>Volumen</th></tr></thead><tbody>`
+    + ss.slice().reverse().map(s=>`<tr><td>${fmtDate(s.iso)}</td><td>${s.sets.map(x=>escapeHtml(infSet(x, m))).join(' · ') || '—'}</td><td>${s.vol ? Math.round(s.vol).toLocaleString('es-CO') : '—'}</td></tr>`).join('')
+    + `</tbody></table>`;
+  openModal('modalInfEx');
+  drawChart('chartInfEx','line',{
+    labels: ss.map(s=>fmtDate(s.iso)),
+    datasets:[{label: m.equip==='body' ? 'Repeticiones' : '1RM estimado (kg)', data: ss.map(s=>m.equip==='body' ? (s.top.score>=1000 ? s.top.score-1000 : s.top.score) : Math.round(s.top.score*10)/10),
+      borderColor:getCss('--cyan'), backgroundColor:'rgba(79,217,208,.14)', tension:.3, fill:true, pointRadius:3}]
+  },{ scales:{ x:{ticks:{color:getCss('--text-dim')}}, y:{ticks:{color:getCss('--text-dim')}, grid:{color:getCss('--border')}} }, plugins:{legend:{display:false}} });
+}
+
+/* Informe en texto para pegarlo donde quieras (por ejemplo, para que Claude lo revise) */
+function infReportText(){
+  const M = infModel(), {P, cur, prev, rows} = M, n0 = v => Math.round(v).toLocaleString('es-CO');
+  const range = P.weeks ? `últimas ${P.weeks} semanas` : 'todo el historial';
+  const from = P.weeks ? P.start : (M.first || P.end);
+  const L = [`INFORME DE FUERZA · ${range} (${fmtDate(from)} – ${fmtDate(P.end)})`];
+  const dv = (c, p) => (prev && p) ? ` (${c>=p?'▲':'▼'} ${Math.abs(Math.round((c-p)/p*100))}% vs periodo anterior)` : '';
+  L.push(`Sesiones: ${cur.days.size} · Series: ${cur.sets} · Volumen: ${n0(cur.vol)} kg${prev ? dv(cur.vol, prev.vol) : ''}`);
+  if(M.body) L.push(M.body);
+  try{ const C = infCheckModel(); if(C.any) L.push('', 'CHEQUEO DE LA SEMANA: '+C.label, C.chips.map(c=>c.l+': '+c.v).join(' · '), C.text, 'Qué haría: '+C.todo); }catch(e){}
+  if(M.insights.length){ L.push('', 'LECTURA RÁPIDA'); M.insights.forEach(o=>L.push('- '+o.x)); }
+  L.push('', 'PESOS POR EJERCICIO (mejor serie · tendencia)');
+  const order = INF_GROUPS.concat([...new Set(rows.map(r=>r.group))].filter(g=>!INF_GROUPS.includes(g)));
+  order.forEach(g=>{
+    const list = rows.filter(r=>r.group===g).sort((a,b)=>b.lastIso.localeCompare(a.lastIso)); if(!list.length) return;
+    L.push(`[${g}]`);
+    list.forEach(r=>{
+      const m = r.m, e1 = infE1(r.best.top, m);
+      const trend = infTrend(r);
+      L.push(`- ${r.name}: mejor ${infSet(r.best.top, m)}${m.equip==='db'?' c/u':''}${e1 ? ', 1RM est. '+infW(e1, m) : ''}${trend ? ' · '+trend : ''} · ${r.n} ${r.n===1?'sesión':'sesiones'}${r.isPR?' · RÉCORD':''}${r.stalled?' · ESTANCADO':''}`);
+    });
+  });
+  L.push('', `SERIES DIRECTAS POR SEMANA (promedio de ${M.effW} ${M.effW===1?'semana':'semanas'}; rango orientativo entre paréntesis)`);
+  MUSC_ORDER.filter(k=>cur.direct[k]).forEach(k=>{
+    const avg = cur.direct[k]/M.effW, t = MUSC_TARGETS[k];
+    L.push(`- ${MUSC_NAMES[k]}: ${fmt1(avg)}${t ? ` (${t[0]}-${t[1]}) ${infMuscleState(k, avg)==='low'?'BAJO':infMuscleState(k, avg)==='high'?'ALTO':'ok'}` : ''}`);
+  });
+  if(M.weekly.labels.length){ L.push('', 'VOLUMEN POR SEMANA (kg × reps)'); M.weekly.labels.forEach((l,i)=>L.push(`- Semana del ${l}: ${n0(M.weekly.data[i])}`)); }
+  return L.join('\n');
+}
+async function infCopy(){
+  const txt = infReportText();
+  try{ await navigator.clipboard.writeText(txt); toast('Informe copiado'); return; }catch(e){}
+  try{
+    const ta = document.createElement('textarea'); ta.value = txt; ta.style.cssText = 'position:fixed; opacity:0; top:0; left:0;';
+    document.body.appendChild(ta); ta.select(); const ok = document.execCommand('copy'); ta.remove();
+    toast(ok ? 'Informe copiado' : 'No pude copiar el informe');
+  }catch(e){ toast('No pude copiar el informe'); }
+}
+document.getElementById('infCopy').addEventListener('click', infCopy);
+
+/* ============ HOMBRO EN CASA: oferta única y equipo ============ */
+function renderHomeBanner(){
+  const b = document.getElementById('homeBanner'); if(!b) return;
+  const dom = state.routinePlan && state.routinePlan.domingo;
+  b.style.display = (state.onboarded && !state.homeOfferDone && dom && dom.tipo==='descanso') ? 'block' : 'none';
+}
+document.getElementById('homeApply').addEventListener('click',()=>{
+  state.routinePlan.domingo = {tipo:'hombroCasa', ejercicios:templateExercises('hombroCasa')};
+  state.homeOfferDone = true;
+  const t = todayISO(), ses = state.sessions[t];
+  if(ses && ses.day==='domingo' && !ses.completed && !ses.exercises.some(ex=>ex.series.some(se=>se.done))) delete state.sessions[t];
+  save(); renderAll(); toast('Domingo: Hombro en casa agregado');
+});
+document.getElementById('homeLater').addEventListener('click',()=>{
+  state.homeOfferDone = true; save(); renderHomeBanner();
+  toast('Lo encuentras en Gym → Semana → Domingo → Hombro en casa');
+});
+function renderHomeEquip(){
+  const el = document.getElementById('homeDbInput'); if(!el || document.activeElement===el) return;
+  el.value = homeDbList().map(v=>String(v).replace('.',',')).join(', ');
+}
+document.getElementById('homeDbSave').addEventListener('click',()=>{
+  /* separa con espacios, ";" o ", ". La coma pegada a un decimal (7,5) se lee como decimal. */
+  const raw = String(document.getElementById('homeDbInput').value).replace(/\s+y\s+/gi,' ').split(/[;\s]+|,(?=\s)/).filter(Boolean);
+  const vals = []; raw.forEach(tk=>{
+    if(/^\d+,(5|25|75)$/.test(tk)) vals.push(parseFloat(tk.replace(',','.')));
+    else tk.split(',').forEach(x=>{ const v = parseFloat(x.replace(',','.')); if(v>0) vals.push(v); });
+  });
+  const okVals = vals.filter(v=>v<=100);
+  const list = [...new Set(okVals)].sort((a,b)=>a-b);
+  if(!list.length){ toast('Escribe al menos un peso, por ejemplo 5, 10'); return; }
+  state.prefs = state.prefs || {}; state.prefs.homeDb = list; save(); renderHomeEquip(); renderSessionHoy();
+  toast('Mancuernas de casa: '+list.map(fmt1).join(', ')+' kg');
+});
+
+
+/* ============ BARRA FIJA DE CASA (barra de cemento) ============
+   La barra de casa no admite discos: su peso es fijo. La app no te pide elegir peso ni te sugiere subirlo. */
+function homeBarKg(){ const v = state.prefs && +state.prefs.homeBar; return v>0 ? v : 15; }
+function isFixedBar(name){ return isHomeEx(name) && /barra/i.test(name||''); }
+
+/* Quien ya agregó "Hombro en casa" al domingo recibe el remo con barra una sola vez */
+(function homeMigrate(){
+  try{
+    const dom = state.routinePlan && state.routinePlan.domingo;
+    if(!dom || dom.tipo!=='hombroCasa' || state.homeBarDone) return;
+    if(!(dom.ejercicios||[]).some(e=>/barra/i.test(e.name))){
+      const t = templateExercises('hombroCasa').find(e=>/barra/i.test(e.name));
+      if(t) dom.ejercicios.unshift(t);
+      const iso = todayISO(), ses = state.sessions[iso];
+      if(ses && ses.day==='domingo' && !ses.completed && !ses.exercises.some(ex=>ex.series.some(se=>se.done))) delete state.sessions[iso];
+    }
+    state.homeBarDone = true; save();
+  }catch(e){}
+})();
+
+/* ============ CALENTAMIENTO CALCULADO ============
+   Para el primer ejercicio pesado de cada músculo: 50% × 8, 70% × 5 y 85% × 3 del peso de trabajo,
+   redondeado a los pesos que existen (discos de 2,5, máquinas de 5, mancuernas del gimnasio). */
+const WARM_MIN = {db:12.5, other:30};
+function warmNeed(m){ return m.equip==='db' ? WARM_MIN.db : WARM_MIN.other; }
+function warmApplies(m, name){ return !(m.timed || m.group==='Cardio' || m.equip==='body' || m.equip==='none' || m.fixed || isHomeEx(name)); }
+function warmTopWeight(ex, m, last){
+  const f = ex.series[0]; let w = 0;
+  if(f) w = m.uni ? Math.max(f.wL||0, f.wR||0) : (f.pesoReal||0);
+  if(!(w>0) && last){ const ds = last.series.filter(s=>s.done); w = ds.length ? Math.max(...ds.map(s=>s.pesoReal||0)) : 0; }
+  return w;
+}
+function warmRound(w, m){
+  if(m.equip==='db'){ let b = DB_WEIGHTS[0]; DB_WEIGHTS.forEach(x=>{ if(Math.abs(x-w) < Math.abs(b-w)) b = x; }); return b; }
+  if(m.unit==='lb') return Math.round(w/LB/5)*5*LB;
+  const step = m.equip==='stack' ? 5 : 2.5;
+  return Math.round(w/step)*step;
+}
+function warmupHTML(ex, exi, m, t){
+  if(!warmApplies(m, ex.name)) return '';
+  const top = warmTopWeight(ex, m, findLastSessionForExercise(ex.name, t));
+  if(!(top >= warmNeed(m))) return '';
+  const ses = state.sessions[t];
+  if(ses){
+    for(let i=0; i<exi; i++){
+      const o = ses.exercises[i], om = exMeta(o.name, sessionPlanEx(state.routinePlan[ses.day], o, i));
+      if(om.group===m.group && warmApplies(om, o.name) && warmTopWeight(o, om, findLastSessionForExercise(o.name, t)) >= warmNeed(om)) return '';
+    }
+  }
+  const bar = m.equip==='plates' ? (exPrefGet(ex.name).bar!=null ? exPrefGet(ex.name).bar : defaultBar(ex.name)) : 0;
+  const out = []; let prev = 0;
+  [[0.5,8],[0.7,5],[0.85,3]].forEach(([f,r])=>{
+    let w = warmRound(top*f, m); if(bar && w<bar) w = bar;
+    if(w>=top-0.01 || w<=prev+0.01) return;
+    out.push([w, r]); prev = w;
+  });
+  if(!out.length) return '';
+  return `<div class="ex-warm"><b>Calentamiento:</b> ${out.map(([w,r])=>wTxt(w, m)+' × '+r).join(' → ')}${m.equip==='db' ? ' (cada mancuerna)' : ''}. Descansa 1 minuto entre ellas y luego empiezas tus series.</div>`;
+}
+
+/* ============ DESCARGA POR RENDIMIENTO ============
+   Además de las semanas seguidas entrenando fuerte, avisa cuando la fuerza se estanca en gran parte de los ejercicios. */
+function perfDeloadSignal(){
+  try{
+    const {byEx} = infCollect(), rows = infBuildRows(byEx, infPeriod(4)), today = todayISO();
+    const elig = Object.values(byEx).filter(rec=>{ const ss = rec.sessions.filter(s=>s.top); return ss.length>=4 && infDays(ss[ss.length-1].iso, today)<=14; });
+    if(elig.length < 6) return null;
+    const bad = new Set(rows.filter(r=>r.stalled || (r.n>=2 && r.delta!=null && r.delta<=-5)).map(r=>r.name));
+    const nBad = elig.filter(r=>bad.has(r.name)).length, share = nBad/elig.length;
+    const since = infAgo(13); let rs = 0, rn = 0;
+    Object.keys(state.sessions||{}).forEach(iso=>{
+      if(iso<since) return;
+      (state.sessions[iso].exercises||[]).forEach(ex=>(ex.series||[]).forEach(s=>{
+        if(!s.done || s.rir==='' || s.rir==null) return;
+        const v = s.rir==='5+' ? 5 : parseFloat(s.rir); if(!isNaN(v)){ rs += v; rn++; }
+      }));
+    });
+    const avgRir = rn>=15 ? rs/rn : null, lowRir = avgRir!=null && avgRir<=0.8;
+    if(share>=0.4 || (share>=0.3 && lowRir)) return {nBad, n:elig.length, avgRir, lowRir};
+  }catch(e){}
+  return null;
+}
+function perfDeloadText(ps){
+  return `Tu fuerza lleva varias semanas sin mejorar: ${ps.nBad} de ${ps.n} ejercicios están estancados o bajando${ps.lowRir ? ' y casi todas tus series terminan al límite (RIR '+fmt1(ps.avgRir)+')' : ''}. Antes de cambiar el plan revisa el sueño y la proteína. Si todo está bien, haz una semana de descarga: mismos días y ejercicios, la mitad de las series, el mismo peso o un 10% menos, y 4-5 repeticiones en reserva.`;
+}
+
+/* ============ CHEQUEO DE LA SEMANA (Gym → Informe) ============
+   Junta entrenos, proteína, fuerza, cintura y peso para decir si vas en recomposición. Es una lectura orientativa. */
+function infAvg(list){ return list.length ? list.reduce((a,b)=>a+b,0)/list.length : null; }
+function infCheckModel(){
+  const g = state.goals || {}, y = infAgo(1), s7 = infAgo(7), ps = periodStats(1, 7);
+  const byDay = {};
+  (state.meals||[]).forEach(m=>{ if(m.date>=s7 && m.date<=y) byDay[m.date] = (byDay[m.date]||0) + (m.p||0); });
+  const dl = Object.keys(byDay), pAvg = infAvg(dl.map(k=>byDay[k])), okDays = dl.filter(k=>byDay[k] >= (g.p||0)*0.9).length;
+  const {byEx} = infCollect();
+  const rows = infBuildRows(byEx, infPeriod(4)).filter(r=>r.n>=2 && r.delta!=null);
+  const up = rows.filter(r=>r.delta>=2).length, down = rows.filter(r=>r.delta<=-5).length;
+  const S = rows.length<3 ? 'na' : (up>=2 && up>=down*2) ? 'up' : (down>=2 && down>up) ? 'down' : 'flat';
+  const ms = sortedMeasures().filter(m=>m.cintura>0); let waist = null;
+  if(ms.length>=2){
+    const a = ms[ms.length-2], b = ms[ms.length-1];
+    waist = {d:b.cintura-a.cintura, days:Math.max(1, infDays(a.date, b.date)), ago:infDays(b.date, todayISO())};
+  }
+  const W = !waist || waist.ago>35 ? 'na' : waist.d<=-0.5 ? 'down' : waist.d>=0.7 ? 'up' : 'flat';
+  const wl = (state.weightLog||[]).slice().sort((a,b)=>a.date.localeCompare(b.date));
+  const wa = infAvg(wl.filter(w=>w.date>=infAgo(6)).map(w=>w.kg)), wb = infAvg(wl.filter(w=>w.date>=infAgo(20) && w.date<infAgo(6)).map(w=>w.kg));
+  const wd = (wa!=null && wb!=null) ? wa-wb : null;
+  const Wt = wd==null ? 'na' : wd>0.6 ? 'up' : wd<-0.6 ? 'down' : 'stable';
+  const sg = v => (v>=0 ? '+' : '−') + fmt1(Math.abs(v));
+  const chips = [
+    {l:'Entrenos', v: ps.planned ? `${ps.train} de ${ps.planned}` : (ps.train ? String(ps.train) : '—'), h:'últimos 7 días', tone: ps.planned && ps.train>=ps.planned ? 'good' : ''},
+    {l:'Proteína', v: pAvg!=null ? Math.round(pAvg)+' g' : '—', h: pAvg!=null ? `meta ${g.p} g · ${okDays} de ${dl.length} días en meta` : 'registra tus comidas', tone: pAvg==null ? '' : (pAvg>=g.p*0.9 ? 'good' : (dl.length>=3 ? 'warn' : ''))},
+    {l:'Calorías', v: ps.logged ? Math.round(ps.kcal).toLocaleString('es-CO') : '—', h: ps.logged ? `meta ${(g.kcal||0).toLocaleString('es-CO')} por día` : 'sin registros', tone:''},
+    {l:'Fuerza', v: S==='na' ? '—' : `${up} ↑ · ${down} ↓`, h: S==='na' ? 'faltan 3 ejercicios repetidos' : 'ejercicios, últimas 4 semanas', tone: S==='up' ? 'good' : S==='down' ? 'warn' : ''},
+    {l:'Cintura', v: waist ? sg(waist.d)+' cm' : '—', h: waist ? (W==='na' ? `hace ${waist.ago} días: vuelve a medirla` : `en ${waist.days} días`) : 'mídela cada 2 semanas', tone: W==='down' ? 'good' : W==='up' ? 'warn' : ''},
+    {l:'Peso', v: wa!=null ? fmt1(wa)+' kg' : '—', h: wd!=null ? sg(wd)+' kg vs 2 semanas antes' : (wa!=null ? 'sin comparación todavía' : 'registra tu peso'), tone:''}
+  ];
+  let tone = 'info', label = 'Faltan datos', text = '', todo = '';
+  if(S==='na' && W==='na'){
+    text = 'Para saber si vas en recomposición necesito series con peso durante 3 o 4 semanas y tu cintura medida cada 2 semanas.';
+    todo = 'Marca tus series con peso y repeticiones en Gym → Hoy, y mide tu cintura en Progreso → Medidas.';
+  } else if(Wt==='down' && S==='down'){
+    tone = 'warn'; label = 'Ajustar';
+    text = 'Estás bajando de peso y de fuerza al mismo tiempo: eso suele ser comer de menos.';
+    todo = 'Sube unas 150 kcal al día, mantén la proteína en tu meta y duerme lo suficiente.';
+  } else if(W==='up' || (Wt==='up' && wd>1 && W!=='down')){
+    tone = 'warn'; label = 'Ajustar';
+    text = W==='up' ? `Tu cintura subió ${fmt1(waist.d)} cm en ${waist.days} días.` : `Tu peso subió ${fmt1(wd)} kg frente a hace dos semanas sin que la cintura baje.`;
+    todo = 'Revisa porciones y que estés registrando todo (aceite, snacks, bebidas). Suma 2.000 pasos al día antes de recortar calorías.';
+  } else if(S==='down'){
+    tone = 'warn'; label = 'Ajustar';
+    text = `Tu fuerza bajó en ${down} ejercicios.`;
+    todo = (pAvg!=null && pAvg<g.p*0.9) ? 'Tu proteína está por debajo de la meta: empieza por ahí y cuida el sueño.' : 'Revisa el sueño y la proteína. Si sigue igual otra semana, haz una semana de descarga.';
+  } else if(S==='up' || W==='down'){
+    tone = 'good'; label = 'En recomposición';
+    text = [S==='up' ? `tu fuerza sube (${up} ejercicios arriba)` : '', W==='down' ? `tu cintura bajó ${fmt1(Math.abs(waist.d))} cm` : ''].filter(Boolean).join(' y ') + (Wt==='stable' ? '; el peso se mantiene.' : '.');
+    text = text.charAt(0).toUpperCase() + text.slice(1);
+    todo = 'Sigue igual: no cambies nada de lo que está funcionando.';
+  } else {
+    label = 'Estable';
+    text = 'Todo se mantiene, sin avances claros todavía.';
+    todo = 'Dale 2 semanas más a la misma rutina antes de cambiar algo.';
+  }
+  const any = rows.length>0 || dl.length>0 || wa!=null || !!waist || ps.train>0;
+  return {any, tone, label, text, todo, chips};
+}
+function renderInfCheck(){
+  const el = document.getElementById('infCheck'); if(!el) return;
+  const M = infCheckModel();
+  if(!M.any){ el.style.display = 'none'; return; }
+  el.style.display = 'block';
+  el.innerHTML = `<div class="chk-head"><div class="card-title" style="margin:0;">Chequeo de la semana</div><span class="chk-badge ${M.tone}">${M.label}</span></div>`
+    + `<p class="inf-note" style="margin:4px 0 0;">Últimos 7 días completos, frente a las semanas anteriores.</p>`
+    + `<div class="chk-grid">${M.chips.map(c=>`<div class="chk-c ${c.tone||''}"><small>${c.l}</small><b>${c.v}</b><span>${c.h}</span></div>`).join('')}</div>`
+    + `<p class="chk-do"><b>Lectura:</b> ${escapeHtml(M.text)}</p><p class="chk-do" style="margin-top:6px;"><b>Qué haría:</b> ${escapeHtml(M.todo)}</p>`;
+}
+
+/* ============ PLAN DE COMIDAS ============
+   El plan no vive en el código: se importa desde un archivo JSON (Perfil → Plan de comidas),
+   así tus comidas no quedan en el repositorio público. Cada comida se registra con un toque. */
+const PLAN_TYPES = ['desayuno','almuerzo','cena','snack'];
+function planClean(p){
+  if(!p || p.format!=='nutrifit-plan-v1' || !Array.isArray(p.weeks) || !p.weeks.length) return null;
+  const num = v => { v = +v; return isFinite(v) ? v : 0; };
+  const weeks = [];
+  for(const w of p.weeks){
+    if(!Array.isArray(w) || w.length!==7) return null;
+    const days = [];
+    for(const d of w){
+      if(!d || !Array.isArray(d.meals) || !d.meals.length) return null;
+      days.push({dia:String(d.dia||''), entreno:String(d.entreno||''), kcal:num(d.kcal), p:num(d.p), c:num(d.c), f:num(d.f), fib:num(d.fib),
+        meals:d.meals.map(m=>({slot:String(m.slot||''), hora:String(m.hora||''), type:PLAN_TYPES.includes(m.type) ? m.type : 'snack', name:String(m.name||'Comida'),
+          kcal:num(m.kcal), p:num(m.p), c:num(m.c), f:num(m.f), fib:num(m.fib),
+          items:(Array.isArray(m.items) ? m.items : []).map(it=>({name:String(it.name||''), grams:num(it.grams), unit:it.unit==='ml' ? 'ml' : 'g',
+            kcal:num(it.kcal), p:num(it.p), c:num(it.c), f:num(it.f), fib:num(it.fib), sug:0, sod:0}))}))});
+    }
+    weeks.push(days);
+  }
+  return {title:String(p.title||'Plan de comidas').slice(0,80), weeks};
+}
+function planNextMonday(){ const d = new Date(), dow = (d.getDay()+6)%7; if(dow>0) d.setDate(d.getDate()+7-dow); return localISO(d); }
+function planFor(iso){
+  const p = state.mealPlan; if(!p || !p.weeks) return null;
+  const diff = infDays(p.anchor, infMonday(iso));
+  if(diff < 0) return {before:true};
+  const wi = Math.floor(diff/7) % p.weeks.length, di = (new Date(iso+'T12:00:00').getDay()+6)%7;
+  return {wi, di, day:p.weeks[wi][di]};
+}
+function renderMealPlan(){
+  const el = document.getElementById('planCard'); if(!el) return;
+  const p = state.mealPlan; if(!p){ el.style.display = 'none'; return; }
+  const t = todayISO(), pf = planFor(t);
+  el.style.display = 'block';
+  if(!pf || pf.before){
+    el.innerHTML = `<div class="card-title">Plan de comidas</div><p class="pl-sum">Tu plan empieza el lunes ${fmtDate(p.anchor)}. Puedes cambiar la fecha en Perfil → Plan de comidas.</p>`;
+    return;
+  }
+  const {wi, di, day} = pf, logged = {};
+  state.meals.forEach(m=>{ if(m.date===t && m.plan) logged[m.plan] = true; });
+  const done = day.meals.filter((_,i)=>logged[`${wi}-${di}-${i}`]).length;
+  el.innerHTML = `<div class="card-title">Plan de hoy</div>`
+    + `<p class="pl-sum">${escapeHtml(day.dia)} · ${escapeHtml(day.entreno)} · semana ${wi+1} de ${p.weeks.length}<br>${Math.round(day.kcal).toLocaleString('es-CO')} kcal · ${Math.round(day.p)} g de proteína · ${Math.round(day.fib)} g de fibra · registradas ${done} de ${day.meals.length}</p>`
+    + day.meals.map((m,i)=>{
+      const on = !!logged[`${wi}-${di}-${i}`];
+      const det = m.items.map(it=>escapeHtml(it.name)+' '+Math.round(it.grams*10)/10+(it.unit==='ml' ? ' ml' : ' g')).join(' · ');
+      return `<div class="pl-row"><div class="pb" data-pl-toggle="1"><small>${escapeHtml(m.slot)}${m.hora ? ' · '+escapeHtml(m.hora) : ''}</small><b>${escapeHtml(m.name)}</b>`
+        + `<em>${Math.round(m.kcal)} kcal · P${Math.round(m.p)} C${Math.round(m.c)} G${Math.round(m.f)}</em><div class="det">${det}</div></div>`
+        + `<button type="button" class="pl-add${on ? ' on' : ''}" data-pl="${i}" aria-pressed="${on}" aria-label="${on ? 'Quitar del registro' : 'Registrar'}: ${escapeHtml(m.name)}">${on ? '✓' : '+'}</button></div>`;
+    }).join('');
+}
+function planToggleMeal(i){
+  const pf = planFor(todayISO()); if(!pf || pf.before || !pf.day.meals[i]) return;
+  const t = todayISO(), ref = `${pf.wi}-${pf.di}-${i}`, at = state.meals.findIndex(m=>m.date===t && m.plan===ref);
+  if(at>=0){ state.meals.splice(at, 1); toast('Comida quitada del registro'); }
+  else {
+    const m = pf.day.meals[i];
+    state.meals.push({id:'m'+Date.now()+'p'+i, date:t, time:new Date().toTimeString().slice(0,5), type:m.type, name:m.name,
+      items:JSON.parse(JSON.stringify(m.items)), kcal:m.kcal, p:m.p, c:m.c, f:m.f, fib:m.fib||0, sug:0, sod:0, allergens:'', photo:null, plan:ref});
+    toast('Registrado: '+m.name);
+  }
+  save(); renderComidas(); renderDashboard(); renderProgreso();
+}
+document.addEventListener('click', e=>{
+  const tg = e.target.closest('#planCard [data-pl-toggle]');
+  if(tg){ tg.parentElement.classList.toggle('open'); return; }
+  const b = e.target.closest('#planCard [data-pl]');
+  if(b) planToggleMeal(+b.dataset.pl);
+});
+function renderPlanSettings(){
+  const st = document.getElementById('planStatus'); if(!st) return;
+  const p = state.mealPlan;
+  st.textContent = p ? `${p.title} · ${p.weeks.length*7} días. Cambia la fecha si empiezas otro lunes.`
+    : 'Importa el archivo del plan (plan-comidas-nutrifit.json) para registrar tus comidas con un toque desde la pestaña Comidas.';
+  document.getElementById('planAnchorField').style.display = p ? 'block' : 'none';
+  document.getElementById('planRemoveBtn').style.display = p ? 'block' : 'none';
+  const a = document.getElementById('planAnchor'); if(p && document.activeElement!==a) a.value = p.anchor;
+  const bar = document.getElementById('homeBarInput'); if(bar && document.activeElement!==bar) bar.value = String(homeBarKg()).replace('.',',');
+}
+document.getElementById('planImportBtn').addEventListener('click', ()=>document.getElementById('planFile').click());
+document.getElementById('planFile').addEventListener('change', e=>{
+  const f = e.target.files && e.target.files[0]; if(!f) return;
+  const rd = new FileReader();
+  rd.onload = ()=>{
+    try{
+      const clean = planClean(JSON.parse(rd.result));
+      if(!clean) throw new Error('formato');
+      state.mealPlan = {title:clean.title, anchor:planNextMonday(), weeks:clean.weeks};
+      save(); renderPlanSettings(); renderComidas();
+      toast('Plan cargado: '+(clean.weeks.length*7)+' días');
+    }catch(err){ toast('Ese archivo no es un plan de NutriFit'); }
+    e.target.value = '';
+  };
+  rd.readAsText(f);
+});
+document.getElementById('planAnchor').addEventListener('change', e=>{
+  if(!state.mealPlan || !e.target.value) return;
+  state.mealPlan.anchor = infMonday(e.target.value); save(); renderPlanSettings(); renderComidas();
+  toast('La semana 1 empieza el lunes '+fmtDate(state.mealPlan.anchor));
+});
+document.getElementById('planRemoveBtn').addEventListener('click', ()=>{
+  if(!confirm('¿Quitar el plan? Las comidas que ya registraste se quedan.')) return;
+  state.mealPlan = null; save(); renderPlanSettings(); renderComidas(); toast('Plan quitado');
+});
+
+/* Barra fija en Perfil → Equipo en casa (comparte el botón de guardar con las mancuernas) */
+document.getElementById('homeDbSave').addEventListener('click', ()=>{
+  const v = parseFloat(String(document.getElementById('homeBarInput').value).replace(',','.'));
+  if(!(v>0 && v<=100)) return;
+  state.prefs = state.prefs || {};
+  if(state.prefs.homeBar !== v){ state.prefs.homeBar = v; save(); renderSessionHoy(); toast('Barra fija: '+fmt1(v)+' kg'); }
+});
 
 /* ============ MEDIDAS CORPORALES Y ANÁLISIS ============ */
 const MEASURE_FIELDS = [
@@ -7006,6 +7804,7 @@ function renderAll(){
   const activeGymTab = document.querySelector('.tab-btn[data-gymtab].active');
   if(activeGymTab && activeGymTab.dataset.gymtab==='semana') renderWeekEditor();
   if(activeGymTab && activeGymTab.dataset.gymtab==='historial') renderHistorial();
+  if(activeGymTab && activeGymTab.dataset.gymtab==='informe') renderInforme();
   if(document.getElementById('view-progreso').classList.contains('active')) renderProgreso();
   renderShell();
 }
@@ -7104,6 +7903,7 @@ const MORE_ACTIONS = [
   {ico:'plate', label:'Ir a Comidas',   kw:'comidas registro',             run:()=>goView('comidas')},
   {ico:'gym',   label:'Ir a Gym',       kw:'gym rutina entreno ejercicio', run:()=>goView('gym')},
   {ico:'chart', label:'Ir a Progreso',  kw:'progreso grafica peso',        run:()=>goView('progreso')},
+  {ico:'chart', label:'Informe de pesos', kw:'informe pesos fuerza records pr 1rm volumen series', run:()=>{ goView('gym'); const b = document.querySelector('.tab-btn[data-gymtab="informe"]'); if(b) b.click(); }},
   {ico:'user',  label:'Ir a Perfil',    kw:'perfil metas plan objetivo',   run:()=>goView('perfil')},
   {ico:'sun',   label:'Cambiar tema',   kw:'tema oscuro claro modo',       run:()=>document.getElementById('themeToggle').click()},
   {ico:'gear',  label:'Configuración',  kw:'configuracion ajustes api key', run:()=>document.getElementById('openConfig').click()},
